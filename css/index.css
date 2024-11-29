@@ -1,0 +1,241 @@
+/* Reset padrão */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    /*background: #0a0514;*/
+    background: repeating-linear-gradient(
+      45deg,
+      #ec5483,
+      #ec5483 10px,
+      #0a0514 10px,
+      #0a0514 20px
+    )
+    #0a0514;
+  background-blend-mode: overlay;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center;
+    padding: 10px 30px;  /* Adiciona um padding mais generoso */
+    background-color: #1e1e37; /* Cor de fundo mais escura */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombras sutis para destacar a navbar */
+    border-radius: 10px;  /* Borda arredondada */
+    margin-bottom: 20px;  /* Espaçamento inferior */
+}
+
+/* Estilo do lado esquerdo da navbar */
+.navbar-left {
+    font-size: 16px;
+    color: #ec5483;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo do centro da navbar */
+.navbar-center {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ec5483;
+}
+
+/* Estilo do lado direito da navbar */
+.navbar-right {
+    display: flex;
+    gap: 15px;  /* Adiciona espaçamento entre os itens */
+}
+
+/* Estilo dos botões de navegação */
+.navbar-right .btn-navbar {
+    background-color: #ec5483;
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-right .btn-navbar:hover {
+    background-color: #d24472;
+    box-shadow: 0 0 12px rgba(236, 84, 131, 0.6);  /* Efeito de hover com brilho */
+}
+
+/* Navbar Responsiva */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;  /* Empilha os itens verticalmente em telas pequenas */
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navbar-left, .navbar-center, .navbar-right {
+        font-size: 18px;  /* Aumenta o tamanho da fonte para dispositivos pequenos */
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: space-around;  /* Distribui igualmente os itens no final */
+    }
+
+    .navbar-right .btn-navbar {
+        padding: 10px 15px;  /* Ajusta o padding dos botões */
+        font-size: 14px;  /* Ajusta o tamanho da fonte */
+    }
+}
+
+/* Container principal para as 3 seções */
+.geral {
+    display: flex;
+    justify-content: center; /* Centraliza as seções horizontalmente */
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilo para cada uma das 3 seções (Lista esquerda, painel central, Lista direita) */
+.lista-esquerda, .lista-direita, .container {
+    background-color: #1e1e37;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+/* Largura das seções */
+.lista-esquerda, .lista-direita {
+    width: 15%;  /* Largura das listas laterais */
+}
+
+.container {
+    width: 60%;
+    height: 70%;  /* Largura do painel de controle central */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centraliza os itens verticalmente */
+    align-items: center;      /* Centraliza os itens horizontalmente */
+    text-align: center;       /* Garante que o texto do título e parágrafo sejam centralizados */
+}
+
+/* Título do painel de controle */
+.container h2 {
+    font-size: 30px;  /* Aumenta o tamanho da fonte */
+    color: #ec5483;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo */
+.container p {
+    font-size: 18px;  /* Aumenta o tamanho da fonte */
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Centraliza os botões e os dá um espaçamento */
+.container .buttons {
+    display: flex;
+    flex-direction: column;  /* Organiza os botões verticalmente */
+    align-items: center;     /* Centraliza os botões horizontalmente */
+    margin-top: 20px;
+}
+
+/* Estilos dos botões */
+.container .btn {
+    background-color: #ec5483;
+    padding: 15px 30px;  /* Aumenta o tamanho do padding */
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;  /* Aumenta o tamanho da fonte */
+    margin: 10px;  /* Aumenta o espaçamento entre os botões */
+    transition: 0.3s ease;
+}
+
+/* Efeito hover */
+.container .btn:hover {
+    background-color: #d24472;
+}
+
+
+/* Títulos das listas */
+.lista-esquerda h3, .lista-direita h3 {
+    font-size: 20px;
+    color: #ec5483;
+    margin-bottom: 15px;
+}
+
+/* Estilos das listas */
+.lista-esquerda ul, .lista-direita ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lista-esquerda li, .lista-direita li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ec5483; /* Borda para separar os itens */
+    border-radius: 6px; /* Arredondar os cantos */
+    background-color: #2a2a49; /* Fundo levemente diferente */
+    transition: 0.3s ease; /* Efeito suave de transição */
+}
+
+/* Efeito ao passar o mouse */
+.lista-esquerda li:hover, .lista-direita li:hover {
+    background-color: #3a3a5b; /* Alterar o fundo ao passar o mouse */
+    border-color: #d24472; /* Alterar a cor da borda */
+}
+
+/* Botão de editar serviço */
+.lista-direita a.btn-editar {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #ec5483;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+
+.lista-direita a.btn-editar:hover {
+    background-color: #d24472;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .geral {
+        flex-direction: column;  /* Empilha as seções em dispositivos menores */
+        padding: 10px;
+    }
+
+    .container {
+        width: 90%;  /* Painel de controle ocupa mais espaço em telas pequenas */
+        margin: 0 0 20px 0;
+    }
+
+    .lista-esquerda, .lista-direita {
+        width: 90%;  /* As listas ocupam mais espaço em telas pequenas */
+        margin-bottom: 20px;
+    }
+}

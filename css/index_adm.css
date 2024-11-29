@@ -1,0 +1,224 @@
+/* Reset padrão */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+        45deg,
+        #ec5483,
+        #ec5483 10px,
+        #0a0514 10px,
+        #0a0514 20px
+    ) #0a0514;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #1e1e37;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do lado esquerdo da navbar */
+.navbar-left {
+    font-size: 16px;
+    color: #ec5483;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo do centro da navbar */
+.navbar-center {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ec5483;
+}
+
+/* Estilo do lado direito da navbar */
+.navbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilo dos botões de navegação */
+.navbar-right .btn-navbar {
+    background-color: #ec5483;
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-right .btn-navbar:hover {
+    background-color: #d24472;
+    box-shadow: 0 0 12px rgba(236, 84, 131, 0.6);
+}
+
+/* Navbar Responsiva */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navbar-right .btn-navbar {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+.geral {
+    display: flex;
+    justify-content: center; /* Centraliza as seções horizontalmente */
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+}
+/* Painel de Controle Central */
+.container, .lista-esquerda {
+    background-color: #1e1e37;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto; /* Centraliza horizontal e verticalmente */
+}
+
+/* Título do painel de controle */
+.container h2 {
+    font-size: 30px;
+    color: #ec5483;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo */
+.container p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Botões no Painel */
+.container .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.container .btn {
+    background-color: #ec5483;
+    padding: 15px 30px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.container .btn:hover {
+    background-color: #d24472;
+}
+
+.lista-esquerda {
+    background-color: #1e1e37;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+/* Largura das seções */
+.lista-esquerda {
+    width: 15%;  /* Largura das listas laterais */
+}
+/* Títulos das listas */
+.lista-esquerda h3 {
+    font-size: 20px;
+    color: #ec5483;
+    margin-bottom: 15px;
+}
+
+/* Estilos das listas */
+.lista-esquerda ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lista-esquerda li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ec5483; /* Borda para separar os itens */
+    border-radius: 6px; /* Arredondar os cantos */
+    background-color: #2a2a49; /* Fundo levemente diferente */
+    transition: 0.3s ease; /* Efeito suave de transição */
+}
+
+/* Efeito ao passar o mouse */
+.lista-esquerda li:hover {
+    background-color: #3a3a5b; /* Alterar o fundo ao passar o mouse */
+    border-color: #d24472; /* Alterar a cor da borda */
+}
+/* Estilo do botão de editar/excluir */
+.lista-esquerda a.btn-editar-excluir {
+    background-color: #ec5483;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.lista-esquerda a.btn-editar-excluir:hover {
+    background-color: #d24472;
+    box-shadow: 0 0 12px rgba(236, 84, 131, 0.6);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+}

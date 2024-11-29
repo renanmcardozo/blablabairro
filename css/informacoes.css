@@ -1,0 +1,82 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+      45deg,
+      #ec5483,
+      #ec5483 10px,
+      #0a0514 10px,
+      #0a0514 20px
+    )
+    #0a0514;
+  background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* Conteúdo principal */
+.container {
+    margin: 80px auto 0; /* Espaço para a navbar */
+    background-color: #1e1e37;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ec5483;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #ec5483;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d24472;
+    box-shadow: 0 0 8px rgba(236, 84, 131, 0.6);
+}
+
+/* Link de navegação para voltar ao painel */
+.back-link {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #ec5483; /* Cor do link */
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}

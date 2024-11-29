@@ -1,0 +1,118 @@
+/* Estilo para a página de Editar / Excluir Informação */
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+        45deg,
+        #ec5483,
+        #ec5483 10px,
+        #0a0514 10px,
+        #0a0514 20px
+    )
+    #0a0514;
+    background-blend-mode: overlay;
+    color: #ffffff; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container do conteúdo */
+.container {
+    margin: 80px auto 0; /* Espaço para a navbar */
+    background-color: #1e1e37; /* Cor de fundo do formulário */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Título da página */
+h2 {
+    font-size: 24px;
+    color: #ec5483; /* Cor do título */
+    margin-bottom: 20px; /* Aumentei o espaçamento */
+}
+
+/* Estilo dos rótulos dos campos do formulário */
+form label {
+    font-size: 16px;
+    color: #ffffff; /* Cor dos rótulos */
+    margin-bottom: 8px;
+    display: block;
+    text-align: left; /* Alinhando rótulos à esquerda */
+}
+
+/* Estilo para os campos de input e textarea */
+form input[type="text"], form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #2e2e4e; /* Cor de fundo dos campos */
+    color: #ffffff;
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    resize: vertical; /* Permite redimensionar o campo de texto verticalmente */
+}
+
+/* Estilo para os botões de salvar e excluir */
+form button {
+    padding: 14px 25px;
+    background-color: #ec5483; /* Cor do botão */
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px; /* Espaçamento superior nos botões */
+}
+
+form button:hover {
+    background-color: #d24472; /* Cor do botão no hover */
+    box-shadow: 0 0 8px rgba(236, 84, 131, 0.6);
+}
+
+/* Estilo para o botão de excluir */
+button[type="submit"][name="excluir"] {
+    background-color: #e63946; /* Cor do botão excluir */
+}
+
+button[type="submit"][name="excluir"]:hover {
+    background-color: #9d2c2c; /* Cor do botão excluir no hover */
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.6);
+}
+
+
+
+/* Link de navegação para voltar ao painel */
+.back-link {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #ec5483; /* Cor do link */
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}

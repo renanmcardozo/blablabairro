@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+        45deg,
+        #ec5483,
+        #ec5483 10px,
+        #0a0514 10px,
+        #0a0514 20px
+      )
+      #0a0514;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o conteúdo será centralizado verticalmente */
+}
+
+.container {
+    background-color: #222233;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px; /* Define a largura máxima */
+    text-align: left; /* Alinha o texto à esquerda */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+h2 {
+    font-size: 24px;
+    color: #ec5483;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: left;
+    width: 100%; /* Garante que o label ocupe a largura total disponível */
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333344;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ec5483;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #ec5483;
+    box-shadow: 0 0 12px rgba(148, 55, 125, 0.6);
+}
+
+/* Alinhamento do checkbox com o texto */
+.declaracao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Deixa o checkbox à esquerda */
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    width: 100%; /* Garante que ocupe toda a largura */
+}
+
+.declaracao input[type="checkbox"] {
+    margin-right: 10px;  /* Adiciona um pequeno espaço entre o checkbox e o texto */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    appearance: none;  /* Remove o estilo padrão do checkbox */
+    border: 2px solid #ec5483;
+    border-radius: 4px;
+    background-color: #121212;  /* Fundo escuro para o checkbox não marcado */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Quando o checkbox for marcado */
+.declaracao input[type="checkbox"]:checked {
+    background-color: #fff;  /* Cor de fundo do checkbox marcado */
+    border-color: #28a745;  /* Cor da borda quando marcado */
+}
+
+/* Estilo para o símbolo de check */
+.declaracao input[type="checkbox"]:checked::before {
+    content: '\2713';  /* Símbolo de checkmark */
+    color: #28a745;  /* Cor verde para o símbolo */
+    font-size: 16px;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+}
+
+/* Remove o checkmark da área não marcada */
+.declaracao input[type="checkbox"]:not(:checked)::before {
+    content: '';  /* Remove o checkmark */
+}
+/* Link de navegação para voltar ao painel */
+.back-link {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #ec5483; /* Cor do link */
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}

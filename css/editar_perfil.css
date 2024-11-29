@@ -1,0 +1,95 @@
+/* editar_perfil.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+      45deg,
+      #ec5483,
+      #ec5483 10px,
+      #0a0514 10px,
+      #0a0514 20px
+    )
+    #0a0514;
+  background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #222233;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ec5483;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333344;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+button.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ec5483;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #ec5483;
+    box-shadow: 0 0 12px rgba(236, 84, 131, 0.6);
+}
+
+a.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ec5483;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+a.btn-back:hover {
+    background-color: #d24472;
+    box-shadow: 0 0 12px rgba(236, 84, 131, 0.6);
+}

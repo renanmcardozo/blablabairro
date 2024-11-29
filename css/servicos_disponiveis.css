@@ -1,0 +1,136 @@
+/* Estilo global para o body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+      45deg,
+      #ec5483,
+      #ec5483 10px,
+      #0a0514 10px,
+      #0a0514 20px
+    )
+    #0a0514;
+  background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1e1e37;
+    color: white;
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-navbar {
+    color: #ec5483;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-navbar:hover {
+    color: #d24472;
+}
+
+/* Container principal */
+.container {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1e1e37;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Título da página */
+h2 {
+    font-size: 24px;
+    color: #ec5483;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    color: white;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #ec5483;
+}
+
+table td {
+    background-color: #2e2e4e;
+}
+
+table td form select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #2e2e4e;
+    color: #fff;
+}
+
+table td form select:focus {
+    outline: none;
+    border-color: #ec5483;
+}
+
+/* Estilo quando não há serviços */
+p {
+    color: #ec5483;
+    font-size: 18px;
+}
+
+/* Estilo para links de navegação */
+a {
+    text-decoration: none;
+    color: #ec5483;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Link de navegação para voltar ao painel */
+.back-link {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #ec5483; /* Cor do link */
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}

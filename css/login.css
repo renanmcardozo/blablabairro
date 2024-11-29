@@ -1,0 +1,137 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+      45deg,
+      #ec5483,
+      #ec5483 10px,
+      #0a0514 10px,
+      #0a0514 20px
+    )
+    #0a0514;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    flex-direction: column; /* Alinha os elementos na coluna */
+}
+
+/* Header com o nome do projeto */
+.project-header {
+    text-align: center;
+    margin-bottom: 40px; /* Aumenta o espaço abaixo do nome */
+}
+
+.project-header h1 {
+    font-size: 50px; /* Tamanho maior para destaque */
+    font-weight: bold;
+    color: #ec5483; /* Cor principal do projeto */
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif; /* Usando a fonte Libre Baskerville */
+    letter-spacing: 3px; /* Espaçamento entre as letras */
+    text-shadow: 0 0 20px rgba(236, 84, 131, 0.8); /* Sombra sutil para dar efeito */
+}
+
+/* Formulário */
+form {
+    background-color: #1e1e37;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título do formulário */
+form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ec5483;
+    text-transform: uppercase;
+}
+
+/* Mensagem de erro */
+form p.error {
+    color: #ff4a4a;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+form label {
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2a2a49;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+form input:focus {
+    background-color: #3a3a5b;
+    box-shadow: 0 0 8px #ec5483;
+}
+
+/* Botão */
+form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ec5483;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d24472;
+    box-shadow: 0 0 12px rgba(236, 84, 131, 0.6);
+}
+
+/* Link de registro */
+form a {
+    color: #ec5483;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+form a:hover {
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+}

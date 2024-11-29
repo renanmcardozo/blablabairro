@@ -1,0 +1,139 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+      45deg,
+      #ec5483,
+      #ec5483 10px,
+      #0a0514 10px,
+      #0a0514 20px
+    )
+    #0a0514;
+  background-blend-mode: overlay;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+form {
+    background-color: #1e1e37;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Título */
+form h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ec5483;
+    text-transform: uppercase;
+}
+
+/* Subtítulo */
+form p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #b3b3b3;
+}
+
+/* Layout de inputs */
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os campos */
+    margin-bottom: 20px;
+}
+
+.input-group .input-wrapper {
+    flex: 1 1 calc(50% - 20px); /* Campos ocupam 50% da linha */
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group .input-wrapper.full-width {
+    flex: 1 1 100%; /* Ocupa a linha inteira */
+}
+
+/* Labels */
+form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="file"] {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2a2a49;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+form input:focus {
+    background-color: #3a3a5b;
+    box-shadow: 0 0 8px #ec5483;
+}
+
+/* Botão */
+form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ec5483;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d24472;
+    box-shadow: 0 0 12px rgba(236, 84, 131, 0.6);
+}
+
+/* Link para voltar */
+form a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ec5483;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+form a:hover {
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .input-group .input-wrapper {
+        flex: 1 1 100%; /* Campos ocupam 100% da linha em telas menores */
+    }
+}

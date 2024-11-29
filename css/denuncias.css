@@ -1,0 +1,178 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+      45deg,
+      #ec5483,
+      #ec5483 10px,
+      #0a0514 10px,
+      #0a0514 20px
+    )
+    #0a0514;
+  background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    margin: 20px;
+    background-color: #1e1e37;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ec5483;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 100%;
+    table-layout: auto; /* Ajusta a largura ao conteúdo */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #2e2e4e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalhos */
+th {
+    background-color: #3e3e5e;
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ec5483;
+}
+
+/* Células */
+td {
+    padding: 12px 15px;
+    color: #ffffff;
+    font-size: 14px;
+    border-bottom: 1px solid #555; /* Linha divisória horizontal */
+    border-right: 1px solid #555; /* Linha divisória vertical */
+}
+
+/* Remove borda da última coluna */
+td:last-child,
+th:last-child {
+    border-right: none;
+}
+
+/* Linha alternada */
+tr:nth-child(even) {
+    background-color: #252545;
+}
+
+/* Hover */
+tr:hover {
+    background-color: #404066;
+    transition: background-color 0.3s;
+}
+
+/* Ajuste dinâmico para conteúdo longo */
+td {
+    word-wrap: break-word; /* Quebra o texto longo */
+    max-width: 200px; /* Limita a largura máxima */
+}
+
+/* Formulário dentro das células */
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+form select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #2e2e4e;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+form button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #ec5483;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background-color: #d24472;
+    box-shadow: 0 0 8px rgba(236, 84, 131, 0.6);
+}
+
+/* Div responsiva */
+.form-container {
+    margin: 20px;
+    background-color: #1e1e37;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 95%; /* Ajusta largura máxima ao texto */
+    overflow-x: auto; /* Permite rolar horizontalmente, se necessário */
+    text-align: center;
+}
+
+
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ec5483;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d24472;
+}
+
+.back-link {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #ec5483;
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}

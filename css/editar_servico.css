@@ -1,0 +1,111 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background: repeating-linear-gradient(
+      45deg,
+      #ec5483,
+      #ec5483 10px,
+      #0a0514 10px,
+      #0a0514 20px
+    )
+    #0a0514;
+  background-blend-mode: overlay;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e37;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Container de Edição */
+.container {
+    margin: 80px auto 0; /* Espaço para a navbar */
+    background-color: #1e1e37;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ec5483;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #2d2d55;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+input[type="datetime-local"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ec5483;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #ec5483;
+    box-shadow: 0 0 12px rgba(236, 84, 131, 0.6);
+}
+/* Link de navegação para voltar ao painel */
+.back-link {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #ec5483; /* Cor do link */
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
